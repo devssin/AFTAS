@@ -1,9 +1,7 @@
-package yc.com.aftas.models;
+package yc.com.aftas.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import lombok.Data;
 
 import java.io.Serializable;

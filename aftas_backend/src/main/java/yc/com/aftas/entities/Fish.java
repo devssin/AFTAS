@@ -1,4 +1,4 @@
-package yc.com.aftas.models;
+package yc.com.aftas.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -19,7 +19,7 @@ public class Fish {
     private Level level;
 
     @OneToMany(mappedBy = "fish", cascade = CascadeType.DETACH, fetch = FetchType.LAZY)
-private List<Hunting> huntings;
+    private List<Hunting> huntings;
 
 
 

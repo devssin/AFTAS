@@ -1,4 +1,4 @@
-package yc.com.aftas.models;
+package yc.com.aftas.entities;
 
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
