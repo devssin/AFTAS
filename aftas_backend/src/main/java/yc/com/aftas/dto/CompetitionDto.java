@@ -1,9 +1,7 @@
 package yc.com.aftas.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import yc.com.aftas.entities.Hunting;
 import yc.com.aftas.entities.Member;
 
@@ -14,6 +12,8 @@ import java.util.List;
 
 @Data
 @Builder
+@Getter
+@Setter
 public class CompetitionDto {
     private String code;
     @JsonFormat(pattern = "yyyy-MM-dd")
@@ -22,7 +22,7 @@ public class CompetitionDto {
     private Time startTime;
     @JsonFormat(pattern = "HH:mm:ss")
     private Time endTime;
-    private int numberOfParticipants;
+    private int numberOfParticipants = 0;
     private String location;
     private float amount;
 
